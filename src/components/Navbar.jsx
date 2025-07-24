@@ -20,7 +20,9 @@ const Navbar = () => {
           <li><a href="#home" className="hover:text-orange-500">Home</a></li>
           <li><a href="#skills" className="hover:text-orange-500">Skills</a></li>
           <li><a href="#projects" className="hover:text-orange-500">Projects</a></li>
-          <li><a href="#about" className="hover:text-orange-500">About</a></li>
+          {/* <li><a href="#about" className="hover:text-orange-500">About</a></li> */}
+          <li><a href="#blogs" className="hover:text-orange-500">Blogs</a></li>
+          <li><a href="#contact" className="hover:text-orange-500">Contact</a></li>
         </ul>
 
         {/* Mobile Menu Toggle */}
@@ -44,6 +46,8 @@ const Navbar = () => {
           <li><a href="#skills" onClick={handleLinkClick} className="hover:text-orange-500">Skills</a></li>
           <li><a href="#projects" onClick={handleLinkClick} className="hover:text-orange-500">Projects</a></li>
           <li><a href="#about" onClick={handleLinkClick} className="hover:text-orange-500">About</a></li>
+          <li><a href="#blogs" onClick={handleLinkClick} className="hover:text-orange-500">Blogs</a></li>
+          <li><a href="#contact" onClick={handleLinkClick} className="hover:text-orange-500">Contact</a></li>
         </ul>
       </div>
     </header>

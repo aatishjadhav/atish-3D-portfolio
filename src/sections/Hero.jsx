@@ -1,27 +1,27 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import profilePic from "../assets/atish.jpg";
 
 const Hero = () => {
   return (
-    <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-6 lg:px-10 mt-24 lg:py-12">
+    <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:px-12 lg:px-16 py-24 lg:py-32">
       <div className="flex-1 text-center md:text-left">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl lg:text-6xl font-bold text-gray-800"
+          className="text-3xl lg:text-6xl font-bold text-gray-800"
         >
-          Hi, <br></br>I'm <span className="text-blue-600">Atish Jadhav</span>
+          Hi, <br></br>I'm <span className="text-sky-600">Atish Jadhav</span>
         </motion.h1>
-        <p className="mt-4 text-gray-600 text-3xl max-w-xl">
+        <p className="mt-4 text-gray-600 text-2xl lg:text-3xl max-w-xl">
           Full-stack Web Developer
         </p>
-        <div className="mt-6 flex gap-4 justify-center md:justify-start">
+        <div className="mt-6 flex gap-5 justify-center items-center md:justify-start">
           <a
-            href="#projects"
-            className="bg-blue-600 text-white px-5 py-2 rounded-xl font-medium hover:bg-blue-700 transition"
+            href="https://drive.google.com/file/d/1yCVrcGn6WU9IXIoWW3dlTupdNNqA7noF/view?usp=sharing"
+            target="blank"
+            className="hover:bg-[#121932] py-2 px-5 rounded-md bg-[#ffffff] transition font-medium text-black border hover:text-white cursor-pointer"
           >
             View Resume
           </a>
@@ -34,7 +34,7 @@ const Hero = () => {
           >
             <FaGithub size={30} />
           </a>
-          {/* LinkedIn Icon */}
+
           <a
             href="https://www.linkedin.com/in/atish-jadhav07/"
             className="nav-link"
@@ -44,12 +44,6 @@ const Hero = () => {
           >
             <FaLinkedin size={30} />
           </a>
-          {/* <a
-            href="mailto:you@example.com"
-            className="border border-gray-300 px-5 py-2 rounded-xl hover:bg-gray-100"
-          >
-            Contact
-          </a> */}
         </div>
       </div>
 

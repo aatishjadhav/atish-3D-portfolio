@@ -1,33 +1,77 @@
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiJavascript,
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiGithub,
+  SiPostman,
+} from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import FadeInSection from "../components/FadeInSection";
+
 const skills = [
-  "React.js",
-  "Next.js",
-  "Tailwind CSS",
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "Git & GitHub",
-  "REST APIs",
+  { label: "React.js", icon: <SiReact className="text-sky-500" size={28} /> },
+  { label: "Next.js", icon: <SiNextdotjs className="text-black" size={28} /> },
+  {
+    label: "Tailwind CSS",
+    icon: <SiTailwindcss className="text-sky-400" size={28} />,
+  },
+  {
+    label: "JavaScript (ES6+)",
+    icon: <SiJavascript className="text-yellow-400" size={28} />,
+  },
+  {
+    label: "TypeScript",
+    icon: <SiTypescript className="text-blue-500" size={28} />,
+  },
+  {
+    label: "Node.js",
+    icon: <SiNodedotjs className="text-green-600" size={28} />,
+  },
+  {
+    label: "Express.js",
+    icon: <SiExpress className="text-gray-700" size={28} />,
+  },
+  {
+    label: "MongoDB",
+    icon: <SiMongodb className="text-green-500" size={28} />,
+  },
+  {
+    label: "Git & GitHub",
+    icon: <FaGitAlt className="text-orange-500" size={28} />,
+  },
+  {
+    label: "REST APIs",
+    icon: <SiPostman className="text-orange-400" size={28} />,
+  },
 ];
 
 const Skills = () => {
   return (
     <section id="skills" className="max-w-6xl mx-auto">
       <div className="py-20 px-6 lg:px-20">
-        <h2 className="text-3xl font-semibold text-gray-800 mb-10">
-          Technical Skills
-        </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-          {skills.map((skill) => (
-            <div
-              key={skill}
-              className="bg-white shadow-md rounded-xl px-4 py-3 text-center font-medium text-gray-700"
-            >
-              {skill}
-            </div>
-          ))}
-        </div>
+        <FadeInSection>
+          <h2 className="text-3xl font-semibold text-gray-800 mb-10">
+            &lt; Technical Skills /&gt;
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {skills.map((skill) => (
+              <div
+                key={skill.label}
+                className="bg-white shadow-md rounded-xl px-4 py-6 text-center flex flex-col items-center justify-center hover:shadow-lg transition"
+              >
+                {skill.icon}
+                <span className="mt-3 text-gray-700 font-medium text-sm">
+                  {skill.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </FadeInSection>
       </div>
     </section>
   );
