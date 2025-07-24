@@ -6,7 +6,7 @@ const Blogs = () => {
     <section id="blogs" className="">
       <div className="max-w-6xl mx-auto px-6 lg:px-20 py-20">
         <FadeInSection>
-          <h2 className="text-4xl font-semibold text-gray-800 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-12">
             &lt; Blogs /&gt;
           </h2>
 

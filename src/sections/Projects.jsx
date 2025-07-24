@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="">
       <div className="max-w-6xl mx-auto px-6 lg:px-20 py-20 bg-gray-100">
         <FadeInSection>
-          <h2 className="text-4xl font-semibold text-gray-800 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-12">
             &lt; Projects /&gt;
           </h2>
 
@@ -17,7 +17,6 @@ const Projects = () => {
                 key={project.title}
                 className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
               >
-                {/* Project Image */}
                 <img
                   src={project.image}
                   alt={project.title}

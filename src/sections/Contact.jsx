@@ -45,12 +45,11 @@ const Contact = () => {
       id="contact"
       className="bg-gray-100 py-20 px-6 lg:px-20 max-w-6xl mx-auto"
     >
-      <div className="max-w-xl mx-auto">
+      <h2 className="lg:text-4xl text-3xl font-semibold text-gray-800 text-center mb-10">
+        &lt; Contact Me /&gt;
+      </h2>
+      <div className="max-w-lg mx-auto">
         <FadeInSection>
-          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-10">
-            &lt; Contact Me /&gt;
-          </h2>
-
           {submitted ? (
             <div className="text-center text-green-600 font-semibold text-lg">
               Thank you! Your message has been sent.
@@ -67,6 +66,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="name"
+                  placeholder="Enter your name"
                   required
                   value={formData.name}
                   onChange={handleChange}
@@ -81,6 +81,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
+                  placeholder="Enter your email"
                   required
                   value={formData.email}
                   onChange={handleChange}
@@ -94,6 +95,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   name="message"
+                  placeholder="Enter your message"
                   rows="5"
                   required
                   value={formData.message}
@@ -106,7 +108,7 @@ const Contact = () => {
                 type="submit"
                 className="hover:bg-[#121932] py-2 px-6 rounded-md bg-white transition font-medium text-black border hover:text-white cursor-pointer"
               >
-                Send Message
+                Let's Talk
               </button>
             </form>
           )}

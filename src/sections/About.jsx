@@ -6,7 +6,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto bg-gray-100 py-12 lg:py-4">
         <FadeInSection>
           <div className="py-20 px-6 lg:px-20 text-center md:text-left">
-            <h2 className="text-4xl font-semibold text-gray-800 mb-6">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-6">
               &lt; About Me /&gt;
             </h2>
             <p className="text-gray-600 max-w-4xl mx-auto text-lg leading-relaxed">
