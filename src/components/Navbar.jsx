@@ -75,11 +75,11 @@ const Navbar = () => {
         }`}
       > */}
       <div
-        className={`lg:hidden fixed top-16 left-0 w-full bg-white shadow-md transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`lg:hidden fixed top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md transition-all duration-300 ease-in-out overflow-hidden ${
           isOpen ? "h-[calc(100vh-4rem)] py-6" : "h-0"
         }`}
       >
-        <ul className="flex flex-col items-center gap-6 text-lg font-medium text-gray-700">
+        <ul className="flex flex-col items-center gap-6 text-lg font-medium text-gray-700 dark:text-gray-100">
           <li>
             <a
               href="#home"
@@ -133,6 +133,9 @@ const Navbar = () => {
             >
               Contact
             </a>
+          </li>
+           <li>
+            <ThemeToggle />
           </li>
         </ul>
       </div>
