@@ -16,7 +16,7 @@ const Projects = () => {
             {projects.map((project) => (
               <div
                 key={project.title}
-                className="bg-white border border-gray-200 dark:border-gray-500 dark:bg-gray-900 dark:text-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
+                className="bg-white border border-gray-200 dark:shadow-lg dark:shadow-white/20 hover:scale-105 dark:border-none dark:bg-gray-900 dark:text-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
               >
                 <img
                   src={project.image}
@@ -40,7 +40,7 @@ const Projects = () => {
                         href={project.demo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-blue-600 hover:text-blue-800 transition text-sm dark:text-gray-100"
+                        className="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition text-sm dark:text-gray-100"
                       >
                         <ExternalLink size={18} />
                         <span className="hidden sm:inline">Live Demo</span>
@@ -50,7 +50,7 @@ const Projects = () => {
                      
                       <a
                         href={project.github}
-                        className="flex items-center gap-1 text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition text-sm"
+                        className="flex items-center gap-2 text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition text-sm"
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="GitHub"

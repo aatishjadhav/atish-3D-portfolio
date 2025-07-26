@@ -14,7 +14,7 @@ const Blogs = () => {
             {blogs.map((blog) => (
               <div
                 key={blog.title}
-                className="bg-white border border-gray-200 dark:bg-gray-900 dark:text-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
+                className="bg-white border border-gray-200 dark:shadow-lg dark:shadow-white/20 hover:scale-105 dark:border-none dark:bg-gray-900 dark:text-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
               >
                 <a href={blog.demo}>
                   <img

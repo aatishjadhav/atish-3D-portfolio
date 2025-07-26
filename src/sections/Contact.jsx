@@ -58,10 +58,10 @@ const Contact = () => {
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="grid grid-cols-1 gap-6 bg-gray-50 p-8 rounded-xl shadow"
+              className="grid grid-cols-1 gap-6 bg-gray-50 dark:bg-gray-900 p-8 rounded-xl shadow"
             >
               <div>
-                <label className="block mb-2 font-medium text-gray-700">
+                <label className="block mb-2 font-medium text-gray-700 dark:text-gray-100">
                   Name
                 </label>
                 <input
@@ -76,7 +76,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block mb-2 font-medium text-gray-700">
+                <label className="block mb-2 font-medium text-gray-700 dark:text-gray-100">
                   Email
                 </label>
                 <input
@@ -91,7 +91,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block mb-2 font-medium text-gray-700">
+                <label className="block mb-2 font-medium text-gray-700 dark:text-gray-100">
                   Message
                 </label>
                 <textarea
@@ -107,7 +107,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="hover:bg-[#121932] py-2 px-6 rounded-md bg-white transition font-medium text-black border hover:text-white cursor-pointer"
+                className="hover:bg-[#121932] dark:border-none py-2 px-6 rounded-md bg-white dark:bg-sky-500 hover:dark:bg-sky-300 transition font-medium text-black dark:text-gray-100 dark:hover:text-black border hover:text-white cursor-pointer hover:translate-y-[-4px] motion-safe:transition-all motion-safe:duration-300"
               >
                 Let's Talk
               </button>

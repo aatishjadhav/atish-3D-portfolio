@@ -26,13 +26,13 @@ const Hero = () => {
             // href="https://drive.google.com/file/d/1yCVrcGn6WU9IXIoWW3dlTupdNNqA7noF/view?usp=sharing"
             href="https://drive.google.com/file/d/1hU-QZIUaVQHcc7xRpSTahopdfH1yJQgy/view?usp=sharing"
             target="blank"
-            className="hover:bg-[#121932] py-2 px-5 rounded-md bg-[#ffffff] transition font-medium text-black border hover:text-white cursor-pointer"
+            className="hover:bg-[#121932] py-2 px-5 rounded-md bg-[#ffffff] dark:bg-sky-500 hover:dark:bg-sky-300 dark:text-gray-100 dark:hover:text-black dark:border-none transition font-medium text-black border hover:text-white cursor-pointer hover:translate-y-[-4px] motion-safe:transition-all motion-safe:duration-300"
           >
             View Resume
           </a>
           <a
             href="https://github.com/aatishjadhav"
-            className="text-white dark:text-gray-200 hover:text-gray-300 transition-colors"
+            className="text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition-colors hover:translate-y-[-4px] motion-safe:transition-all motion-safe:duration-300"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -42,7 +42,7 @@ const Hero = () => {
 
           <a
             href="https://www.linkedin.com/in/atish-jadhav07/"
-            className="text-white dark:text-gray-200 hover:text-gray-300 transition-colors"
+            className="text-gray-700 dark:text-white hover:text-black dark:hover:text-gray-300 transition-colors hover:translate-y-[-4px] motion-safe:transition-all motion-safe:duration-300"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"

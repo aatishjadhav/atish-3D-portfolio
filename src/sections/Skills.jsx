@@ -53,29 +53,32 @@ const skills = [
 const Skills = () => {
   return (
     <section className="dark:max-w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-    <div id="skills" className="max-w-6xl mx-auto dark:bg-gray-900 dark:text-gray-100">
-      <div className="py-20 px-6 lg:px-20">
-        <FadeInSection>
-          <h2 className="text-3xl lg:text-3xl font-semibold text-gray-800 mb-10 dark:text-gray-100">
-            &lt; Technical Skills /&gt;
-          </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {skills.map((skill) => (
-              <div
-                key={skill.label}
-                className="bg-white shadow-md rounded-xl px-4 py-6 text-center flex flex-col items-center justify-center hover:shadow-lg transition"
-              >
-                {skill.icon}
-                <span className="mt-3 text-gray-700 font-medium text-sm">
-                  {skill.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </FadeInSection>
+      <div
+        id="skills"
+        className="max-w-6xl mx-auto dark:bg-gray-900 dark:text-gray-100"
+      >
+        <div className="py-20 px-6 lg:px-20">
+          <FadeInSection>
+            <h2 className="text-3xl lg:text-3xl font-semibold text-gray-800 mb-10 dark:text-gray-100">
+              &lt; Technical Skills /&gt;
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              {skills.map((skill) => (
+                <div
+                  key={skill.label}
+                  className="bg-white dark:border-gray-200 dark:bg-gray-900 dark:text-gray-100 shadow-md dark:shadow-lg dark:shadow-white/20 rounded-xl px-4 py-6 text-center flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+                > 
+                  {skill.icon}
+                  <span className="mt-3 text-gray-700 dark:text-gray-100 font-medium text-sm">
+                    {skill.label}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </FadeInSection>
+        </div>
       </div>
-      </div>
-      </section>
+    </section>
   );
 };
 
