@@ -1,12 +1,51 @@
-# React + Vite
+# 🧑‍💻 Atish Jadhav – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio website built using **React**, **Tailwind CSS**, and **Framer Motion**. It showcases my skills, projects, blogs, and ways to connect. Fully responsive and optimized for performance and accessibility.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [View Portfolio](https://atish-portfolio-neon.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Features
+
+- ✨ Sleek, modern UI built with React & Tailwind CSS
+- 📱 Responsive design with mobile-first approach
+- 🎞️ Smooth animations via Framer Motion
+- 🧠 Tech Stack & Skill Showcase
+- 💼 Project gallery with interactive preview
+- 📝 Blog section with future CMS integration ready
+- 📩 Contact form with smooth scroll and email integration
+- 🔒 SEO-friendly meta setup
+- 🌙 Light background with soft shadows and accessibility in mind
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech               | Description                                 |
+|--------------------|---------------------------------------------|
+| **React.js**       | Core framework                              |
+| **Tailwind CSS**   | Utility-first styling                       |
+| **Framer Motion**  | Animations                                  |
+| **Lucide Icons**   | Clean modern icon set                       |
+| **React Router**   | Internal section navigation (hash-based)    |
+
+---
+
+## 📂 Folder Structure
+
+```bash
+.
+├── public/                  # Static assets
+├── src/
+│   ├── components/          # Navbar, Footer, Tabs etc.
+│   ├── sections/            # Hero, Skills, Projects, Blogs, Contact
+│   ├── assets/              # Images & icons
+│   ├── App.jsx              # Main layout
+│   └── index.js             # Entry point
+├── tailwind.config.js       # Tailwind setup
+└── package.json             # Dependencies & scripts
