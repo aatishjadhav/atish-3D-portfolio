@@ -19,8 +19,8 @@ const Hero = () => {
         </p>
         <div className="mt-6 flex gap-5 justify-center items-center md:justify-start">
           <a
-            href="https://drive.google.com/file/d/1yCVrcGn6WU9IXIoWW3dlTupdNNqA7noF/view?usp=sharing"
-            //https://drive.google.com/file/d/1bHTY8GR8sdQnWN5Lw-kQ4Ey9hQeZKQ1w/view?usp=sharing
+            // href="https://drive.google.com/file/d/1yCVrcGn6WU9IXIoWW3dlTupdNNqA7noF/view?usp=sharing"
+            href="https://drive.google.com/file/d/190Qw612FIfhRZ_Y-VTmg-kKhGhjnko8O/view?usp=sharing"
             target="blank"
             className="hover:bg-[#121932] py-2 px-5 rounded-md bg-[#ffffff] transition font-medium text-black border hover:text-white cursor-pointer"
           >
