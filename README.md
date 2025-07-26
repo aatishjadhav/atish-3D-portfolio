@@ -6,7 +6,7 @@ This is my personal developer portfolio website built using **React**, **Tailwin
 
 ## 🌐 Live Demo
 
-🔗 [View Portfolio](https://atish-portfolio-neon.vercel.app/)
+🔗 [View Portfolio](https://atish-jadhav.netlify.app/)
 
 ---
 
