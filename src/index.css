@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+/* Enable manual dark mode toggling via `.dark` on html */
+@custom-variant dark (&:where(.dark, .dark *));
 html {
   scroll-behavior: smooth;
 }

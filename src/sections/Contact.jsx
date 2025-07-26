@@ -41,11 +41,12 @@ const Contact = () => {
   };
 
   return (
-    <section
+    <section className="dark:max-w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div
       id="contact"
-      className="bg-gray-100 py-20 px-6 lg:px-20 max-w-6xl mx-auto"
+      className="bg-gray-100 py-20 px-6 lg:px-20 max-w-6xl mx-auto dark:bg-gray-900 dark:text-gray-100"
     >
-      <h2 className="lg:text-4xl text-3xl font-semibold text-gray-800 text-center mb-10">
+      <h2 className="lg:text-4xl text-3xl font-semibold text-gray-800 text-center mb-10 dark:text-gray-100">
         &lt; Contact Me /&gt;
       </h2>
       <div className="max-w-lg mx-auto">
@@ -114,7 +115,8 @@ const Contact = () => {
           )}
         </FadeInSection>
       </div>
-    </section>
+      </div>
+      </section>
   );
 };
 

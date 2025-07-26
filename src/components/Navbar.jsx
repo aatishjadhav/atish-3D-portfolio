@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,11 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-[#fdfdfd]/40 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-50">
+    <header className="bg-[#fdfdfd]/40 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-50 md:dark:max-w-full lg:dark:px-8  dark:bg-gray-900 dark:text-gray-100">
       <nav className="flex items-center justify-between px-6 md:px-12 h-16 lg:max-w-6xl lg:mx-auto">
         <a
           href="/"
-          className="text-[38px] text-gray-900 hover:text-indigo-600 transition-all duration-300"
+          className="text-[38px] text-gray-900 hover:text-indigo-600 transition-all duration-300 dark:text-gray-100"
           style={{
             fontFamily: "'Playfair Display', serif",
             fontStyle: "italic",
@@ -25,7 +26,7 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center gap-8 text-lg font-medium text-gray-700">
+        <ul className="hidden lg:flex items-center gap-8 text-lg font-medium text-gray-700 dark:text-gray-100">
           <li>
             <a href="#home" className="hover:text-orange-500">
               Home
@@ -52,8 +53,11 @@ const Navbar = () => {
               Contact
             </a>
           </li>
+          <li>
+            <ThemeToggle />
+          </li>
         </ul>
-
+    
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}

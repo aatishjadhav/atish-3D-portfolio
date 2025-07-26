@@ -3,10 +3,10 @@ import blogs from "../data/blogs";
 
 const Blogs = () => {
   return (
-    <section id="blogs" className="">
-      <div className="max-w-6xl mx-auto px-6 lg:px-20 py-20">
+    <section id="blogs" className="dark:max-w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+      <div className="max-w-6xl mx-auto px-6 lg:px-20 py-20 dark:bg-gray-900 dark:text-gray-100">
         <FadeInSection>
-          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-12">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-12 dark:text-gray-100">
             &lt; Blogs /&gt;
           </h2>
 
@@ -14,7 +14,7 @@ const Blogs = () => {
             {blogs.map((blog) => (
               <div
                 key={blog.title}
-                className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
+                className="bg-white border border-gray-200 dark:bg-gray-900 dark:text-gray-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
               >
                 <a href={blog.demo}>
                   <img
@@ -25,11 +25,11 @@ const Blogs = () => {
 
                   <div className="p-4 flex flex-col justify-between h-full">
                     <div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2 dark:text-gray-100">
                         {blog.title}
                       </h3>
-                      <p className="text-gray-600 text-sm mb-4">{blog.date}</p>
-                      <p className="text-gray-600 text-sm mb-4 flex items-center gap-1">
+                      <p className="text-gray-600 text-sm mb-4 dark:text-gray-100">{blog.date}</p>
+                      <p className="text-gray-600 text-sm mb-4 flex items-center gap-1 dark:text-gray-100">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 16 16"

@@ -52,10 +52,11 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="max-w-6xl mx-auto">
+    <section className="dark:max-w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <div id="skills" className="max-w-6xl mx-auto dark:bg-gray-900 dark:text-gray-100">
       <div className="py-20 px-6 lg:px-20">
         <FadeInSection>
-          <h2 className="text-3xl lg:text-3xl font-semibold text-gray-800 mb-10">
+          <h2 className="text-3xl lg:text-3xl font-semibold text-gray-800 mb-10 dark:text-gray-100">
             &lt; Technical Skills /&gt;
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
@@ -73,7 +74,8 @@ const Skills = () => {
           </div>
         </FadeInSection>
       </div>
-    </section>
+      </div>
+      </section>
   );
 };
 

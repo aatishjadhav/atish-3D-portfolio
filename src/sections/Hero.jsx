@@ -4,7 +4,9 @@ import profilePic from "../assets/atish.jpg";
 
 const Hero = () => {
   return (
-    <section className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:px-12 lg:px-16 py-24 lg:py-32">
+    <section className="dark:max-w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:px-12 lg:px-16 py-24 lg:py-32 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       <div className="flex-1 text-center md:text-left">
         <motion.h1
           initial={{ opacity: 0, y: -40 }}
@@ -12,9 +14,11 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-3xl lg:text-6xl font-bold text-gray-800"
         >
-          Hi, <br></br>I'm <span className="text-sky-600">Atish Jadhav</span>
+          <span className="dark:text-gray-300">Hi,</span> <br></br>
+          <span className="dark:text-gray-300">I'm </span>
+          <span className="text-sky-600">Atish Jadhav</span>
         </motion.h1>
-        <p className="mt-4 text-gray-600 text-2xl lg:text-3xl max-w-xl">
+        <p className="mt-4 text-gray-600 dark:text-gray-300 text-2xl lg:text-3xl max-w-xl">
           Full-stack Web Developer
         </p>
         <div className="mt-6 flex gap-5 justify-center items-center md:justify-start">
@@ -28,22 +32,22 @@ const Hero = () => {
           </a>
           <a
             href="https://github.com/aatishjadhav"
-            className="nav-link "
+            className="text-white dark:text-gray-200 hover:text-gray-300 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "black" }}
+            aria-label="GitHub"
           >
-            <FaGithub size={30} />
+            <FaGithub size={30} className="fill-current" />
           </a>
 
           <a
             href="https://www.linkedin.com/in/atish-jadhav07/"
-            className="nav-link"
+            className="text-white dark:text-gray-200 hover:text-gray-300 transition-colors"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "black" }}
+            aria-label="LinkedIn"
           >
-            <FaLinkedin size={30} />
+            <FaLinkedin size={30} className="fill-current" />
           </a>
         </div>
       </div>
@@ -60,7 +64,8 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
       </motion.div>
-    </section>
+      </div>
+      </section>
   );
 };
 
