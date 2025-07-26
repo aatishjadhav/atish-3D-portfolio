@@ -50,7 +50,7 @@ const Contact = () => {
         &lt; Contact Me /&gt;
       </h2>
       <div className="max-w-lg mx-auto">
-        <FadeInSection>
+        <FadeInSection variant="slideInLeft" delay={0.2}>
           {submitted ? (
             <div className="text-center text-green-600 font-semibold text-lg">
               Thank you! Your message has been sent.

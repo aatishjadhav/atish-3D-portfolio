@@ -5,7 +5,7 @@ const Blogs = () => {
   return (
     <section id="blogs" className="dark:max-w-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
       <div className="max-w-6xl mx-auto px-6 lg:px-20 py-20 dark:bg-gray-900 dark:text-gray-100">
-        <FadeInSection>
+        <FadeInSection variant="slideInRight" delay={0.4}>
           <h2 className="text-3xl lg:text-4xl font-semibold text-gray-800 mb-12 dark:text-gray-100">
             &lt; Blogs /&gt;
           </h2>

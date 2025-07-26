@@ -58,7 +58,7 @@ const Skills = () => {
         className="max-w-6xl mx-auto dark:bg-gray-900 dark:text-gray-100"
       >
         <div className="py-20 px-6 lg:px-20">
-          <FadeInSection>
+          <FadeInSection variant="slideInRight" delay={0.4}>
             <h2 className="text-3xl lg:text-3xl font-semibold text-gray-800 mb-10 dark:text-gray-100">
               &lt; Technical Skills /&gt;
             </h2>
