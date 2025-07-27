@@ -1,4 +1,4 @@
-# 🧑‍💻 Atish Jadhav – Developer Portfolio
+# 🧑‍💻 Atish Jadhav – 3D-Portfolio
 
 This is my personal developer portfolio website built using **React**, **Tailwind CSS**, and **Three.js**. Fully responsive and optimized for performance and accessibility.
 
